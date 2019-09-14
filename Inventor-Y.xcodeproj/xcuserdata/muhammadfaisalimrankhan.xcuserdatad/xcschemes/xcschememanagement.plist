@@ -4,23 +4,24 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Google-Mobile-Ads-SDK.xcscheme</key>
+		<key>Inventor-Y.xcscheme</key>
 		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Pods-Inventor-Y.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Pods-Inventor-YTests.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
+			<key>orderHint</key>
+			<integer>0</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
-	<dict/>
+	<dict>
+		<key>199339AD20381BF600DB6F6D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>199339C420381BF600DB6F6D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
 </dict>
 </plist>

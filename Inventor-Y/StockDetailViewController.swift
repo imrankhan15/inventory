@@ -1,0 +1,84 @@
+//
+//  StockDetailViewController.swift
+//  Inventor-Y
+//
+//  Created by Muhammad Faisal Imran Khan on 2/20/18.
+//  Copyright © 2018 MI Apps. All rights reserved.
+//
+
+import UIKit
+import CoreData
+import GoogleMobileAds
+
+class StockDetailViewController: UIViewController {
+    
+    var stock = Photos()
+
+    @IBOutlet weak var bannerView: GADBannerView!
+    @IBOutlet weak var barcode: UILabel!
+    
+    @IBOutlet weak var Details: UILabel!
+    @IBOutlet weak var imgView: UIImageView!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        bannerView.adUnitID = "ca-app-pub-4598488303993049/9992742924"
+        bannerView.rootViewController = self
+        bannerView.load(GADRequest())
+        
+        let a = stock.value(forKey: "barcode") as! String
+        
+       
+        
+        let b = stock.value(forKey: "desc") as! String
+        
+        
+        barcode.text = " Barcode: " + a
+        
+        Details.text = " Details: " + b
+        
+        let upload = stock.value(forKey: "upload") as? String
+        
+        let image = getImageFromPath(sender: upload!)
+        
+        imgView.image = image
+        
+        // Do any additional setup after loading the view.
+    }
+    
+    func getImageFromPath(sender: String) -> UIImage {
+        let nsDocumentDirectory = FileManager.SearchPathDirectory.documentDirectory
+        let nsUserDomainMask    = FileManager.SearchPathDomainMask.userDomainMask
+        let paths               = NSSearchPathForDirectoriesInDomains(nsDocumentDirectory, nsUserDomainMask, true)
+        
+        var image = UIImage()
+        if let dirPath          = paths.first
+        {
+            let imageURL = URL(fileURLWithPath: dirPath).appendingPathComponent(sender)
+            image    = UIImage(contentsOfFile: imageURL.path)!
+            
+            return image
+            // Do whatever you want with the image
+        }
+        
+        return image
+    }
+    
+
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
+
+   
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+    }
+  
+
+}
