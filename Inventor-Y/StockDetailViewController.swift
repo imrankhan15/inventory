@@ -8,13 +8,13 @@
 
 import UIKit
 import CoreData
-import GoogleMobileAds
+
 
 class StockDetailViewController: UIViewController {
     
     var stock = Photos()
 
-    @IBOutlet weak var bannerView: GADBannerView!
+    
     @IBOutlet weak var barcode: UILabel!
     
     @IBOutlet weak var Details: UILabel!
@@ -23,9 +23,7 @@ class StockDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        bannerView.adUnitID = "ca-app-pub-4598488303993049/9992742924"
-        bannerView.rootViewController = self
-        bannerView.load(GADRequest())
+      
         
         let a = stock.value(forKey: "barcode") as! String
         

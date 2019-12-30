@@ -9,7 +9,7 @@
 import UIKit
 import AVFoundation
 import CoreData
-import GoogleMobileAds
+
 
 
 class DetailViewController: UIViewController, UIImagePickerControllerDelegate, UITextFieldDelegate, AVCaptureMetadataOutputObjectsDelegate, UINavigationControllerDelegate, AVCapturePhotoCaptureDelegate, UIGestureRecognizerDelegate {
@@ -17,7 +17,7 @@ class DetailViewController: UIViewController, UIImagePickerControllerDelegate, U
     
 
 
-    @IBOutlet weak var bannerView: GADBannerView!
+    
     
     
     @IBOutlet weak var imageView: UIImageView!
@@ -68,17 +68,13 @@ class DetailViewController: UIViewController, UIImagePickerControllerDelegate, U
         if !captureSession.isRunning {
             captureSession.startRunning()
         }
-        bannerView.adUnitID = "ca-app-pub-4598488303993049/9992742924"
-        bannerView.rootViewController = self
-        bannerView.load(GADRequest())
+       
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        bannerView.adUnitID = "ca-app-pub-4598488303993049/9992742924"
-        bannerView.rootViewController = self
-        bannerView.load(GADRequest())
+       
         
         btn_barcode.backgroundColor = UIColorFromRGB(rgbValue: 0xDC2429)
         btn_barcode.tintColor = UIColor.white

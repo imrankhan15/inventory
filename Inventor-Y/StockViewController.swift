@@ -9,11 +9,11 @@
 import UIKit
 import CoreData
 import MessageUI
-import GoogleMobileAds
+
 
 class StockViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, MFMailComposeViewControllerDelegate {
 
-    @IBOutlet weak var bannerView: GADBannerView!
+    
     @IBOutlet weak var tableView: UITableView!
     
     var stocks = [Photos]()
@@ -25,9 +25,7 @@ class StockViewController: UIViewController, UITableViewDelegate, UITableViewDat
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        bannerView.adUnitID = "ca-app-pub-4598488303993049/9992742924"
-        bannerView.rootViewController = self
-        bannerView.load(GADRequest())
+       
         
         if let savedProfiles = loadProfiles() {
             profiles += savedProfiles

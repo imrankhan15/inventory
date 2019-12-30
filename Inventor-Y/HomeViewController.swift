@@ -8,11 +8,11 @@
 
 import UIKit
 import CoreData
-import GoogleMobileAds
+
 
 class HomeViewController: UIViewController , UITableViewDelegate, UITableViewDataSource {
 
-    @IBOutlet weak var bannerView: GADBannerView!
+    
     @IBOutlet var tableView: UITableView!
     
     @IBOutlet weak var takePicture: UIButton!
@@ -55,9 +55,7 @@ class HomeViewController: UIViewController , UITableViewDelegate, UITableViewDat
         
         self.navigationItem.title = "Home"
         
-        bannerView.adUnitID = "ca-app-pub-4598488303993049/9992742924"
-        bannerView.rootViewController = self
-        bannerView.load(GADRequest())
+        
     }
 
     

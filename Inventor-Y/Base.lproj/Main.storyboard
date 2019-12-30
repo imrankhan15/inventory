@@ -81,31 +81,20 @@
                                     <action selector="backHome:" destination="GZu-fw-pGJ" eventType="touchUpInside" id="ZhE-bL-Hmc"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ani-VO-2cb" customClass="GADBannerView">
-                                <rect key="frame" x="0.0" y="581" width="375" height="86"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="86" id="QkV-a2-3JW"/>
-                                </constraints>
-                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="ani-VO-2cb" secondAttribute="trailing" id="1jF-4C-M70"/>
                             <constraint firstItem="FyT-Cf-xSq" firstAttribute="top" secondItem="Gc9-HG-hPO" secondAttribute="bottom" constant="8" id="7p0-Av-dM1"/>
                             <constraint firstItem="FyT-Cf-xSq" firstAttribute="centerX" secondItem="LBO-4U-weQ" secondAttribute="centerX" constant="-5.5" id="Inr-TE-h7R"/>
                             <constraint firstItem="Gc9-HG-hPO" firstAttribute="leading" secondItem="LBO-4U-weQ" secondAttribute="leadingMargin" id="OTa-pL-L8B"/>
-                            <constraint firstItem="VSu-FC-5qB" firstAttribute="top" secondItem="ani-VO-2cb" secondAttribute="bottom" id="Rz0-cJ-hBB"/>
                             <constraint firstItem="Gc9-HG-hPO" firstAttribute="top" secondItem="HMW-HA-iYN" secondAttribute="bottom" id="bOI-h2-6kt"/>
                             <constraint firstItem="Gc9-HG-hPO" firstAttribute="top" secondItem="HMW-HA-iYN" secondAttribute="bottom" id="i1i-fY-ioQ"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Gc9-HG-hPO" secondAttribute="trailing" id="iMj-ZP-viT"/>
-                            <constraint firstItem="ani-VO-2cb" firstAttribute="leading" secondItem="LBO-4U-weQ" secondAttribute="leading" id="rFj-OZ-Txt"/>
-                            <constraint firstItem="ani-VO-2cb" firstAttribute="top" secondItem="FyT-Cf-xSq" secondAttribute="bottom" constant="8" symbolic="YES" id="zJ8-LO-qoJ"/>
+                            <constraint firstItem="VSu-FC-5qB" firstAttribute="top" secondItem="FyT-Cf-xSq" secondAttribute="bottom" constant="94" id="pGE-ai-3Bk"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Inventory" id="D4q-7A-BCO"/>
                     <connections>
-                        <outlet property="bannerView" destination="ani-VO-2cb" id="ls2-Po-LPT"/>
                         <outlet property="tableView" destination="Gc9-HG-hPO" id="X3m-az-dQK"/>
                     </connections>
                 </viewController>
@@ -161,31 +150,20 @@
                                     </label>
                                 </subviews>
                             </stackView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7da-Cu-sMr" customClass="GADBannerView">
-                                <rect key="frame" x="0.0" y="548" width="375" height="119"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="119" id="Fqg-vm-1ts"/>
-                                </constraints>
-                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="aR5-Jp-ZJ2" firstAttribute="top" secondItem="c1C-F6-CBa" secondAttribute="bottom" constant="20" id="0Ba-vy-HlR"/>
                             <constraint firstItem="ooV-Tc-TL2" firstAttribute="leading" secondItem="mK0-aU-RQC" secondAttribute="leadingMargin" constant="10" id="3Wd-4r-olP"/>
                             <constraint firstItem="ooV-Tc-TL2" firstAttribute="centerY" secondItem="mK0-aU-RQC" secondAttribute="centerY" id="E8d-Ko-PB1"/>
-                            <constraint firstItem="2ar-XY-GOR" firstAttribute="top" secondItem="7da-Cu-sMr" secondAttribute="bottom" id="EO1-2E-7OW"/>
-                            <constraint firstAttribute="trailing" secondItem="7da-Cu-sMr" secondAttribute="trailing" id="EYd-Yx-o7e"/>
                             <constraint firstAttribute="trailingMargin" secondItem="ooV-Tc-TL2" secondAttribute="trailing" constant="10" id="JXH-Wb-079"/>
                             <constraint firstItem="ooV-Tc-TL2" firstAttribute="top" secondItem="aR5-Jp-ZJ2" secondAttribute="bottom" constant="65" id="Lpn-jA-qlS"/>
                             <constraint firstItem="ooV-Tc-TL2" firstAttribute="centerX" secondItem="mK0-aU-RQC" secondAttribute="centerX" id="Ns5-2r-Ds2"/>
-                            <constraint firstItem="7da-Cu-sMr" firstAttribute="leading" secondItem="mK0-aU-RQC" secondAttribute="leading" id="RX9-ip-s1t"/>
                             <constraint firstItem="aR5-Jp-ZJ2" firstAttribute="centerX" secondItem="mK0-aU-RQC" secondAttribute="centerX" id="jjU-Q9-AT2"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="Details" destination="tfE-C5-0X9" id="tQp-gp-gdB"/>
-                        <outlet property="bannerView" destination="7da-Cu-sMr" id="QKk-qw-pYL"/>
                         <outlet property="barcode" destination="Wd5-Jd-0LK" id="Nwb-w3-H7W"/>
                         <outlet property="imgView" destination="XNB-ph-rnh" id="CSR-ZQ-1Ta"/>
                     </connections>
@@ -330,30 +308,19 @@
                                     <segue destination="Llg-0M-B7K" kind="show" identifier="" id="6hp-xJ-5m2"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PEN-h4-xyj" customClass="GADBannerView">
-                                <rect key="frame" x="0.0" y="605" width="375" height="62"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="62" id="zoj-6Q-0ak"/>
-                                </constraints>
-                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="R3R-mw-c1L" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="Csx-IE-fW9"/>
-                            <constraint firstItem="PEN-h4-xyj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ILB-6O-Z1B"/>
                             <constraint firstItem="cEK-II-oy6" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Qst-y7-LbC"/>
                             <constraint firstItem="R3R-mw-c1L" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="30" id="Zh6-2t-vcg"/>
                             <constraint firstItem="cEK-II-oy6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="flN-bW-uMf"/>
                             <constraint firstAttribute="trailingMargin" secondItem="R3R-mw-c1L" secondAttribute="trailing" constant="10" id="g4X-Rc-60w"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="PEN-h4-xyj" secondAttribute="bottom" id="mDn-Qm-nEf"/>
-                            <constraint firstAttribute="trailing" secondItem="PEN-h4-xyj" secondAttribute="trailing" id="nba-h6-atm"/>
                             <constraint firstItem="cEK-II-oy6" firstAttribute="top" secondItem="R3R-mw-c1L" secondAttribute="bottom" constant="31.5" id="t5B-ix-Mut"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Upn-Tb-7TX"/>
                     <connections>
-                        <outlet property="bannerView" destination="PEN-h4-xyj" id="Xx5-ag-ZtR"/>
                         <outlet property="tableView" destination="R3R-mw-c1L" id="EAZ-YT-YIp"/>
                         <outlet property="takePicture" destination="cEK-II-oy6" id="0f7-t5-eZA"/>
                     </connections>
@@ -452,25 +419,14 @@
                                     <constraint firstAttribute="bottom" secondItem="gvY-18-dJk" secondAttribute="bottom" id="zZg-LO-Qpt"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tma-vn-brr" customClass="GADBannerView">
-                                <rect key="frame" x="0.0" y="598" width="375" height="69"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="69" id="RaV-Qn-2qQ"/>
-                                </constraints>
-                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="tma-vn-brr" firstAttribute="leading" secondItem="out-iS-wUn" secondAttribute="leading" id="26v-0Z-wrd"/>
-                            <constraint firstItem="Hza-Mk-0I6" firstAttribute="top" secondItem="tma-vn-brr" secondAttribute="bottom" id="41q-vp-1DU"/>
-                            <constraint firstAttribute="trailing" secondItem="tma-vn-brr" secondAttribute="trailing" id="WkP-I5-Fpp"/>
                             <constraint firstItem="7SB-uK-FFg" firstAttribute="centerY" secondItem="out-iS-wUn" secondAttribute="centerY" id="gYl-e7-QZo"/>
                             <constraint firstItem="7SB-uK-FFg" firstAttribute="centerX" secondItem="out-iS-wUn" secondAttribute="centerX" id="iDC-9A-9Me"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="bannerView" destination="tma-vn-brr" id="9ro-vF-roY"/>
                         <outlet property="button_accept" destination="yHX-uh-jzh" id="2Pg-F0-NUk"/>
                         <outlet property="button_retake" destination="1q5-Es-LOs" id="ddd-QV-iZ7"/>
                         <outlet property="imageView" destination="gvY-18-dJk" id="0cp-jB-IaL"/>
@@ -557,13 +513,6 @@
                                     <constraint firstAttribute="height" constant="130" id="VZA-Nf-trB"/>
                                 </constraints>
                             </stackView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fet-BC-8DH" customClass="GADBannerView">
-                                <rect key="frame" x="0.0" y="596" width="375" height="71"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="71" id="475-Dv-ouz"/>
-                                </constraints>
-                            </view>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="oHz-qO-Rxx">
                                 <rect key="frame" x="26" y="456" width="323" height="50"/>
                                 <subviews>
@@ -592,7 +541,6 @@
                         <constraints>
                             <constraint firstItem="pRD-CP-PCv" firstAttribute="leading" secondItem="IJG-2Q-fmq" secondAttribute="leadingMargin" id="BcO-ic-ywy"/>
                             <constraint firstItem="QmW-ZP-ras" firstAttribute="leading" secondItem="IJG-2Q-fmq" secondAttribute="leadingMargin" constant="20" id="Fqn-Vx-JV2"/>
-                            <constraint firstAttribute="trailing" secondItem="Fet-BC-8DH" secondAttribute="trailing" id="Ocd-jH-0mR"/>
                             <constraint firstItem="oHz-qO-Rxx" firstAttribute="top" secondItem="QmW-ZP-ras" secondAttribute="bottom" constant="45" id="Qrw-8e-3fH"/>
                             <constraint firstItem="pRD-CP-PCv" firstAttribute="top" secondItem="kii-Qj-Et3" secondAttribute="bottom" constant="10" id="WSD-YU-4So"/>
                             <constraint firstItem="pRD-CP-PCv" firstAttribute="trailing" secondItem="IJG-2Q-fmq" secondAttribute="trailingMargin" id="gAi-Id-qJe"/>
@@ -601,13 +549,10 @@
                             <constraint firstItem="QmW-ZP-ras" firstAttribute="top" secondItem="pRD-CP-PCv" secondAttribute="bottom" constant="25" id="onT-Ry-V2n"/>
                             <constraint firstItem="pRD-CP-PCv" firstAttribute="centerX" secondItem="IJG-2Q-fmq" secondAttribute="centerX" id="ph9-wF-9lR"/>
                             <constraint firstAttribute="trailingMargin" secondItem="QmW-ZP-ras" secondAttribute="trailing" constant="20" id="qEb-1v-p3G"/>
-                            <constraint firstItem="qa4-ov-iQN" firstAttribute="top" secondItem="Fet-BC-8DH" secondAttribute="bottom" id="ulo-xc-6Bc"/>
-                            <constraint firstItem="Fet-BC-8DH" firstAttribute="leading" secondItem="IJG-2Q-fmq" secondAttribute="leading" id="vbV-D8-Bcp"/>
                             <constraint firstItem="oHz-qO-Rxx" firstAttribute="leading" secondItem="IJG-2Q-fmq" secondAttribute="leadingMargin" constant="10" id="x6U-E8-7Ze"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="bannerView" destination="Fet-BC-8DH" id="tlw-hG-avR"/>
                         <outlet property="btn_barcode" destination="1HV-z1-0PB" id="9Mn-kI-VBN"/>
                         <outlet property="btn_saveNext" destination="Hj0-4y-xUE" id="RVE-y6-zye"/>
                         <outlet property="btn_saveReturn" destination="AvX-2l-x9G" id="Jly-qf-fOz"/>

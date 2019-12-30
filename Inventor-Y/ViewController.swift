@@ -8,10 +8,10 @@
 
 import UIKit
 import AVFoundation
-import GoogleMobileAds
+
 
 class ViewController: UIViewController, AVCapturePhotoCaptureDelegate, UIGestureRecognizerDelegate {
-    @IBOutlet weak var bannerView: GADBannerView!
+    
     
     @IBOutlet weak var imgTick: UIImageView!
     @IBOutlet weak var imageView: UIImageView!
@@ -60,9 +60,7 @@ class ViewController: UIViewController, AVCapturePhotoCaptureDelegate, UIGesture
         
         stillImageOutput = AVCapturePhotoOutput()
 
-        bannerView.adUnitID = "ca-app-pub-4598488303993049/9992742924"
-        bannerView.rootViewController = self
-        bannerView.load(GADRequest())
+       
 
         button_accept.isHidden = true
         
@@ -123,9 +121,7 @@ class ViewController: UIViewController, AVCapturePhotoCaptureDelegate, UIGesture
         
         imgTick.addGestureRecognizer(pgr)
         
-        bannerView.adUnitID = "ca-app-pub-4598488303993049/9992742924"
-        bannerView.rootViewController = self
-        bannerView.load(GADRequest())
+       
     }
 
     func capturePhoto() {
